@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+   
+}
+.preloader > img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: animateImg 5s linear infinite;
+}
+@keyframes animateImg {
+    0% {
+        filter: brightness(0.5) blur(0px);
+    }
+    50% {
+        filter: brightness(2) blur(3px);
+    }
+    100% {
+        filter: brightness(0.5) blur(0px);
+    }
+}
+.preloader p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader p.name {
+    position: fixed;
+    font-size: 90px;
+    font-weight: bold;    
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);
+    z-index: 1;
+    animation: animateTxt 5s linear infinite;
+
+}
+@keyframes animateTxt {
+    0% {
+        filter: brightness(3) ;
+    }
+    50% {
+        filter: brightness(0.2);
+    }
+    100% {
+        filter: brightness(3);
+    }
+}
+.txt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    margin-bottom: -15%;
+
+}
+.txt .loa {
+    position: relative;
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(0, 255, 42);
+    bottom: 20%;
+    z-index: 1;    
+    
+}
+.preloader .txt .loa.l1{
+    animation: animateLe 1s linear infinite;
+}
+.preloader .txt .loa.l2{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 0.5s;
+}
+.preloader .txt .loa.l3{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 1s;
+}
+.preloader .txt .loa.l4{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 1.5s;
+}
+.preloader .txt .loa.l5{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 2s;
+}
+.preloader .txt .loa.l6{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 0.5s;
+}
+.preloader .txt .loa.l7{
+    animation: animateLe 1s linear infinite;
+    animation-delay: 1s;
+}
+.preloader .txt .loa.l8{
+    animation: animatePo 1.5s linear infinite;
+    animation-delay: 0.5s;
+}
+.preloader .txt .loa.l9{
+    animation: animatePo 1.5s linear infinite;
+    animation-delay: 0.6s;
+}
+.preloader .txt .loa.l10{
+    animation: animatePo 1.5s linear infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes animatePo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animateLe {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hide {
+    display: none;
+    position: relative;
+}
