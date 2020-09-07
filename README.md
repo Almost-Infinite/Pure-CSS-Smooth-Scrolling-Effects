@@ -7,7 +7,7 @@
 
 # Pure CSS Smooth Scrolling Effects
 
-[![Site](img/screen.gif)](link)
+[![Site](img/screen.gif)](https://almost-infinite.github.io/Pure-CSS-Smooth-Scrolling-Effects/)
 
 
 <p align="left" > <img src="https://komarev.com/ghpvc/?username=almost-infinite" alt="almost-infinite" style="border-radius: 30px;" /> </p>
